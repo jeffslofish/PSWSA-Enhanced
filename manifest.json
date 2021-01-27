@@ -1,0 +1,17 @@
+{
+  "name": "PortSwigger Web Security Academy Enhanced",
+  "version": "1.0.0",
+  "description": "Keep track of what learning materials you have completed in the PortSwigger Web Security Academy, all on one page.",
+  "homepage_url": "https://github.com/jeffslofish/pswsa-enhanced",
+  "manifest_version": 2,
+  "icons": {
+    "128": "icon.png"
+  },
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["https://portswigger.net/web-security/all-materials"],
+      "js": ["jquery-3.5.1.min.js", "script.js"]
+    }
+  ]
+}
